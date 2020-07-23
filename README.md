@@ -1,2 +1,2 @@
-# SRTPluginProviderOri1
-SRT Plugin Provider For Ori and the Blind Forest
+# SRTPluginProviderRE3
+A provider plugin for the SRT Host to provide memory values to other plugins.
