@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SRTPluginProviderRE7
+namespace SRTPluginProviderOri1
 {
     public interface IGameMemoryOri1
     {

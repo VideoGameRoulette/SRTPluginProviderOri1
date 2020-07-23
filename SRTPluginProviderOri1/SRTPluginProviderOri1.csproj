@@ -9,7 +9,7 @@
     <Authors>Christopher Couture</Authors>
     <Company>VideoGameRoulette</Company>
     <Copyright>Copyright © 2020 Christopher Couture</Copyright>
-    <Product>Resident Evil 7 Memory Provider Plugin</Product>
+    <Product>Ori and the Blind Forest Memory Provider Plugin</Product>
     <Description>A provider plugin for the SRT Host to provide memory values to other plugins.</Description>
   </PropertyGroup>
 

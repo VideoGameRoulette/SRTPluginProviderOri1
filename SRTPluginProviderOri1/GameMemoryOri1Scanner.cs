@@ -2,7 +2,7 @@
 using System;
 using System.Diagnostics;
 
-namespace SRTPluginProviderRE7
+namespace SRTPluginProviderOri1
 {
     internal class GameMemoryOri1Scanner : IDisposable
     {
@@ -48,13 +48,13 @@ namespace SRTPluginProviderRE7
             {
                 BaseAddress = NativeWrappers.GetProcessBaseAddress(pid, PInvoke.ListModules.LIST_MODULES_64BIT).ToInt64(); // Bypass .NET's managed solution for getting this and attempt to get this info ourselves via PInvoke since some users are getting 299 PARTIAL COPY when they seemingly shouldn't.
 
-                PointerSecretAreas = new MultilevelPointer(memoryAccess, BaseAddress + PointerAddressSecretAreas, 0x98L, 0x68L, 0x70L);
+                PointerSecretAreas = new MultilevelPointer(memoryAccess, BaseAddress + PointerAddressSecretAreas, 0x468L);
             }
         }
 
         private void SelectPointerAddresses()
         {
-            PointerAddressSecretAreas = 0x08223758;
+            PointerAddressSecretAreas = 0x00F26C58;
         }
 
 

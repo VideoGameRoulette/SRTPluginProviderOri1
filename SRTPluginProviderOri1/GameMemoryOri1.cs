@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace SRTPluginProviderRE7
+namespace SRTPluginProviderOri1
 {
     public struct GameMemoryOri1 : IGameMemoryOri1
     {

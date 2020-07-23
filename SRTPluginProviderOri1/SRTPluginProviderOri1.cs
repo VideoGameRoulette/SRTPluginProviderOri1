@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 
-namespace SRTPluginProviderRE7
+namespace SRTPluginProviderOri1
 {
     public class SRTPluginProviderOri1 : IPluginProvider
     {
