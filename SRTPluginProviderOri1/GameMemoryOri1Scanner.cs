@@ -48,13 +48,13 @@ namespace SRTPluginProviderOri1
             {
                 BaseAddress = NativeWrappers.GetProcessBaseAddress(pid, PInvoke.ListModules.LIST_MODULES_64BIT).ToInt64(); // Bypass .NET's managed solution for getting this and attempt to get this info ourselves via PInvoke since some users are getting 299 PARTIAL COPY when they seemingly shouldn't.
 
-                PointerSecretAreas = new MultilevelPointer(memoryAccess, BaseAddress + PointerAddressSecretAreas, 0x468L);
+                PointerSecretAreas = new MultilevelPointer(memoryAccess, BaseAddress + PointerAddressSecretAreas, 0x148L, 0x8L, 0x50L, 0x3E0L, 0x10L);
             }
         }
 
         private void SelectPointerAddresses()
         {
-            PointerAddressSecretAreas = 0x00F26C58;
+            PointerAddressSecretAreas = 0x00F6A2A0;
         }
 
 
